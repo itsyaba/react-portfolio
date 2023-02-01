@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cursor {
+          position: fixed;
+          width: 35px;
+          height: 35px;
+          border: 1px solid #c6c6c6;
+          border-radius: 50%;
+          left: 0;
+          top: 0;
+          z-index: 99;
+          pointer-events: none;
+          transform: translate(-50%, -50%) scale(1.1);
+          transition: .1s;
+          backdrop-filter: blur(1px) ; 
+}
+
+.cursor2 {
+          position: fixed;
+          width: 8px;
+          height: 8px;
+          background-color: #c6c6c6;
+          border-radius: 50%;
+          left: 0;
+          top: 0;
+          z-index: 99;
+          pointer-events: none;
+          transform: translate(-50%, -50%);
+          /* transition: .15s; */
+          transition: all ease-in;
+}
+
+a:hover~.cursor {
+          transform: translate(-50%, -50%) scale(1.5);
+
+}
+
+nav {
+          backdrop-filter: blur(55px) saturate(150%);
+}
+
+#code {
+          font-family: 'Press Start 2P';
+}
+
+#child{
+          display: none;
+}
+
+#parent:hover  #child {
+          display: inline-block;
+}
+
+::-webkit-scrollbar{
+          width: .5em;
+}
+
+::-webkit-scrollbar-track { 
+          border-radius: 100vw;
+          margin-block: .5em;
+
+}
+::-webkit-scrollbar-thumb {
+          background-color: #c6c6c6;
+          border-radius: 100vw;
+}
+
+@media (max-width : 800px) {
+          .cursor{
+                    display: none;
+          }
+          .cursor2{
+                    display: none;
+          }
+}
