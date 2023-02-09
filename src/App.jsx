@@ -122,9 +122,9 @@ export default function App() {
   const ProjectList = [
     {
       img: "/assets/projects/react-typescript.png",
-      name: "React-Task-management-system",
+      name: "React-Typescript-dictionary",
       tech: ["react", "typescript", "tailwind", "mantine"],
-      link: "https://react-tms.vercel.app/",
+      link: "https://react-typescript-dictionary.vercel.app/",
     },
     {
       img: "/assets/projects/reactTMS.jpg",
