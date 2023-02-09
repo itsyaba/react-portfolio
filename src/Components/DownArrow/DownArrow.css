@@ -1,6 +1,6 @@
 .container {
-  margin-top: 50px;
-  transform: translateY(60px);
+          margin-top: 50px;
+          transform: translateY(60px);
 }
 
 .ico {
@@ -32,7 +32,7 @@
 .circle-top {
 
           height: 33px;
-          width:41px;
+          width: 41px;
           animation: blob-1-anim 3s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
           z-index: 0;
           top: 0;

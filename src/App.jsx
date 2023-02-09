@@ -18,6 +18,7 @@ import {
   IconBrandTelegram,
   IconBrandLinkedin,
   IconMenu2,
+  IconBrandTypescript,
 } from "@tabler/icons-react";
 import { Tooltip, Grid, Image } from "@mantine/core";
 
@@ -77,6 +78,10 @@ export default function App() {
       icon: <IconBrandJavascript />,
     },
     {
+      name: "TYPESCRIPT",
+      icon: <IconBrandTypescript />,
+    },
+    {
       name: "REACT",
       icon: <IconBrandReact />,
     },
@@ -115,6 +120,12 @@ export default function App() {
     },
   ];
   const ProjectList = [
+    {
+      img: "/assets/projects/react-typescript.png",
+      name: "React-Task-management-system",
+      tech: ["react", "typescript", "tailwind", "mantine"],
+      link: "https://react-tms.vercel.app/",
+    },
     {
       img: "/assets/projects/reactTMS.jpg",
       name: "React-Task-management-system",

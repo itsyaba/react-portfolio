@@ -14,7 +14,7 @@
           pointer-events: none;
           transform: translate(-50%, -50%) scale(1.1);
           transition: .1s;
-          backdrop-filter: blur(1px) ; 
+          backdrop-filter: blur(1px);
 }
 
 .cursor2 {
@@ -45,33 +45,35 @@ nav {
           font-family: 'Press Start 2P';
 }
 
-#child{
+#child {
           display: none;
 }
 
-#parent:hover  #child {
+#parent:hover #child {
           display: inline-block;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
           width: .5em;
 }
 
-::-webkit-scrollbar-track { 
+::-webkit-scrollbar-track {
           border-radius: 100vw;
           margin-block: .5em;
 
 }
+
 ::-webkit-scrollbar-thumb {
           background-color: #c6c6c6;
           border-radius: 100vw;
 }
 
 @media (max-width : 800px) {
-          .cursor{
+          .cursor {
                     display: none;
           }
-          .cursor2{
+
+          .cursor2 {
                     display: none;
           }
 }
