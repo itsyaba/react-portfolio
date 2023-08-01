@@ -316,7 +316,7 @@ export default function App() {
         id="projects"
       >
         <h1 className="font-poppins text-2xl uppercase mb-16 text-center w-auto md:text-4xl">
-          Here are some of projects
+          Here are some of my projects
         </h1>
         <div className="flex items-center justify-center w-screen">
           <div className="w-full grid gap-6 grid-cols-1 grid-rows-3items-center justify-center md:grid-cols-2 lg:grid-cols-3 place-items-center">
