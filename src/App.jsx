@@ -8,8 +8,6 @@ import {
   IconBrandMantine,
   IconBrandCss3,
   IconBrandNpm,
-  IconBrandTabler,
-  IconBrandVscode,
   IconApi,
   IconBrandGithub,
   IconCircuitMotor,
@@ -19,6 +17,7 @@ import {
   IconBrandLinkedin,
   IconMenu2,
   IconBrandTypescript,
+  IconBrandNextjs
 } from "@tabler/icons-react";
 import { Tooltip, Grid, Image } from "@mantine/core";
 
@@ -29,6 +28,7 @@ export default function App() {
   const cursor2Ref = useRef();
   const [fullWidth, setFullWidth] = useState(false);
   const [open, setOpen] = useState(false);
+
   const NavElement = [
     {
       order: 1,
@@ -60,7 +60,26 @@ export default function App() {
       active: true,
     },
   ];
+
+  
   const LanguageList = [
+    {
+      name: "NEXT JS",
+      icon: <IconBrandNextjs />,
+    }, 
+    {
+      name: "REACT",
+      icon: <IconBrandReact />,
+    },
+    {
+      name: "JAVASCRIPT",
+      icon: <IconBrandJavascript />,
+    },
+    {
+      name: "TYPESCRIPT",
+      icon: <IconBrandTypescript />,
+    },
+
     {
       name: "HTML",
       icon: <IconBrandHtml5 />,
@@ -73,25 +92,10 @@ export default function App() {
       name: "GITHUB",
       icon: <IconBrandGithub />,
     },
-    {
-      name: "JAVASCRIPT",
-      icon: <IconBrandJavascript />,
-    },
-    {
-      name: "TYPESCRIPT",
-      icon: <IconBrandTypescript />,
-    },
-    {
-      name: "REACT",
-      icon: <IconBrandReact />,
-    },
+
     {
       name: "REDUX",
       icon: <IconBrandRedux />,
-    },
-    {
-      name: "API",
-      icon: <IconApi />,
     },
     {
       name: "TAILWIND",
@@ -104,19 +108,6 @@ export default function App() {
     {
       name: "MANTINE",
       icon: <IconBrandMantine />,
-    },
-    {
-      name: "NPM",
-      icon: <IconBrandNpm />,
-    },
-
-    {
-      name: "TABLER ICON",
-      icon: <IconBrandTabler />,
-    },
-    {
-      name: "VS CODE",
-      icon: <IconBrandVscode />,
     },
   ];
   const ProjectList = [
@@ -175,9 +166,7 @@ export default function App() {
     window.addEventListener("scroll", (e) => {
       // up_arrow.classList.toggle("active-for-back", window.scrollY > 350);
       // nav_two.classList.toggle("active-for-fixed", window.scrollY > 700);
-      // console.log();
       if (window.scrollY > 100) {
-        console.log("hello");
         setFullWidth(true);
       } else {
         setFullWidth(false);
@@ -246,7 +235,7 @@ export default function App() {
             yeabsira tarekegn
           </h1>
           <p className="text-xl mt-4 tracking-wide font-bold uppercase font-poppins sm:text-2xl">
-            fullstack developer
+            full stack developer
           </p>
           <div className="h-12 w-12 shadow-glow  bg-gradient-to-b from-[#ff9364] to-[#ff926491]  rounded-full -translate-y-72 translate-x-24   animate-waving-hand "></div>
           <a href="#about">
@@ -259,20 +248,15 @@ export default function App() {
         id="about"
       >
         <h1 className="text-2xl font-poppins uppercase mt-1 mb-8 text-center sm:3xl md:text-4xl w-auto mx-10">
-          Hi, I'm Yeabsira. Nice to meet you.
+          Hi there! I'm Yeabsira. Nice to meet you.
         </h1>
-        <div className="w-9/12" id="code">
+        <div className="md:w-9/12 w-11/12" id="code">
           <span className="translate-x-10 ">{"<p>"}</span>
           <p className="mx-8 my-3 font-poppins font-bold">
-            I am front-end developer with experience in React, I am passionate
-            about creating visually appealing and user-friendly web
-            applications. I have experience working with React hooks and
-            components, as well as an understanding of the latest web
-            development technologies such as JavaScript, HTML, and CSS. My goal
-            is to continue learning and growing as a developer, while also
-            delivering high-quality and efficient code.
+          I'm a passionate and dedicated MERN stack developer with a growing expertise in Next.js. Currently pursuing my degree in Computer Science, I have a strong foundation in both theoretical and practical aspects of software development. My journey in coding started as a hobby, and it has grown into a fulfilling career path that I'm excited to explore every day.
           </p>
-          {"</p>"}
+          <span className="translate-x-10 ">{"</p>"}</span>
+
         </div>
       </section>
       <section
@@ -282,10 +266,10 @@ export default function App() {
         <h1 className="font-poppins text-3xl uppercase mb-8  sm:text-5xl">
           My experience
         </h1>
-        <div className="w-2/4 text-center">
+        <div className="w-3/4 text-center">
           <Grid
             justify="center"
-            gutter={5}
+            gutter={1}
             gutterXs="md"
             gutterMd="md"
             gutterXl={30}
