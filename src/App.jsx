@@ -246,7 +246,7 @@ export default function App() {
             yeabsira tarekegn
           </h1>
           <p className="text-xl mt-4 tracking-wide font-bold uppercase font-poppins sm:text-2xl">
-            front end developer
+            fullstack developer
           </p>
           <div className="h-12 w-12 shadow-glow  bg-gradient-to-b from-[#ff9364] to-[#ff926491]  rounded-full -translate-y-72 translate-x-24   animate-waving-hand "></div>
           <a href="#about">
